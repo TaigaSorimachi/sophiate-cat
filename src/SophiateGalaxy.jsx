@@ -874,6 +874,14 @@ export default function SophiateGalaxy() {
           <a href="mailto:info@sophiate.co.jp" className="g-link-pill">
             &#9993; お問い合わせ
           </a>
+          <a
+            href="https://reachup.mf-hd.com/link/tnqjctn5wxr"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="g-link-pill"
+          >
+            &#128101; 決済者直アポ
+          </a>
         </div>
       </div>
 
