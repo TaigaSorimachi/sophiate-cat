@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Central blue circle -->
+  <circle cx="256" cy="256" r="60" fill="#5B7FE8"/>
+  <!-- Orbit 1 (horizontal tilt) -->
+  <ellipse cx="256" cy="256" rx="220" ry="80" fill="none" stroke="#1a1a1a" stroke-width="22" transform="rotate(-30 256 256)"/>
+  <!-- Orbit 2 -->
+  <ellipse cx="256" cy="256" rx="220" ry="80" fill="none" stroke="#1a1a1a" stroke-width="22" transform="rotate(30 256 256)"/>
+  <!-- Orbit 3 (vertical tilt) -->
+  <ellipse cx="256" cy="256" rx="220" ry="80" fill="none" stroke="#1a1a1a" stroke-width="22" transform="rotate(90 256 256)"/>
+  <!-- Electron dots -->
+  <circle cx="76" cy="130" r="18" fill="#1a1a1a"/>
+  <circle cx="436" cy="130" r="18" fill="#1a1a1a"/>
+  <circle cx="76" cy="382" r="18" fill="#1a1a1a"/>
+  <circle cx="436" cy="382" r="18" fill="#1a1a1a"/>
+</svg>
