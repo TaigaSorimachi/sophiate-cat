@@ -780,15 +780,6 @@ export default function SophiateGalaxy() {
         <div className={`g-buttons ${phase >= 3 ? "in" : ""}`}>
           <div className="g-btn-row">
             <a
-              href="https://sophiate.co.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="g-btn-ghost"
-            >
-              <span className="g-btn-icon">&#127760;</span>
-              ホームページ
-            </a>
-            <a
               href="https://sophiate.co.jp/business-record/"
               target="_blank"
               rel="noopener noreferrer"
@@ -811,7 +802,7 @@ export default function SophiateGalaxy() {
 
         <div className={`g-links ${phase >= 4 ? "in" : ""}`}>
           <a href="https://sophiate.co.jp/" target="_blank" rel="noopener noreferrer" className="g-link-pill">
-            sophiate.co.jp
+            &#127760; HPを見る
           </a>
           <a href="mailto:info@sophiate.co.jp" className="g-link-pill">
             &#9993; お問い合わせ
