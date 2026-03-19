@@ -669,55 +669,6 @@ export default function SophiateGalaxy() {
         }
         .g-buttons.in { opacity: 1; transform: translateY(0); }
 
-        .g-btn-primary {
-          position: relative;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
-          padding: 20px 60px;
-          font-family: 'Noto Sans JP', sans-serif;
-          font-size: 16px;
-          font-weight: 700;
-          letter-spacing: 0.15em;
-          color: #fff;
-          background: linear-gradient(135deg, #6b7ff5, #7b2ff7);
-          border: none;
-          border-radius: 60px;
-          cursor: pointer;
-          text-decoration: none;
-          transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
-          box-shadow:
-            0 0 30px rgba(107,127,245,0.4),
-            0 0 80px rgba(123,47,247,0.2);
-          overflow: hidden;
-        }
-        .g-btn-primary::before {
-          content: '';
-          position: absolute;
-          inset: -3px;
-          border-radius: 63px;
-          background: linear-gradient(135deg, #7be0f5, #6b7ff5, #7b2ff7, #7be0f5);
-          background-size: 300% 300%;
-          z-index: -1;
-          opacity: 0;
-          transition: opacity 0.4s;
-          animation: shimmer 3s ease infinite;
-        }
-        .g-btn-primary:hover {
-          transform: scale(1.08) translateY(-2px);
-          box-shadow:
-            0 0 50px rgba(107,127,245,0.6),
-            0 0 120px rgba(123,47,247,0.35),
-            0 0 200px rgba(107,127,245,0.15);
-        }
-        .g-btn-primary:hover::before { opacity: 1; }
-        .g-btn-primary:active { transform: scale(0.97); }
-
-        @keyframes shimmer {
-          0%,100% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-        }
-
         .g-btn-row {
           display: flex;
           gap: 14px;
@@ -827,15 +778,6 @@ export default function SophiateGalaxy() {
         </div>
 
         <div className={`g-buttons ${phase >= 3 ? "in" : ""}`}>
-          <a
-            href="https://calendar.app.google/A5zZKHUzubjC2jou5"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="g-btn-primary"
-          >
-            無料で相談する
-          </a>
-
           <div className="g-btn-row">
             <a
               href="https://sophiate.co.jp/"
