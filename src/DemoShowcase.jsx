@@ -88,6 +88,23 @@ const INDUSTRIES = {
     ),
     tagline: "営業の勝ちパターンを、プロダクトで量産する",
   },
+  lifestyle: {
+    key: "lifestyle",
+    name: "住宅・生活サービス",
+    nameEn: "HOUSING & LIFESTYLE",
+    color: "#ec4899",
+    colorSoft: "#fce7f3",
+    colorMid: "#f472b6",
+    icon: (
+      <svg viewBox="0 0 48 48" fill="none" width="28" height="28">
+        <path d="M6 22L24 6l18 16" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+        <path d="M10 20v22h28V20" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
+        <path d="M20 42V28h8v14" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" />
+        <path d="M32 14V8h4v10" stroke="currentColor" strokeWidth="2.5" strokeLinejoin="round" strokeLinecap="round" />
+      </svg>
+    ),
+    tagline: "暮らしの接点を、アプリとシステムで一つに束ねる",
+  },
 };
 
 const DEMOS = [
@@ -154,6 +171,18 @@ const DEMOS = [
       "中小規模のスクールには、大手向けの高額なLMS SaaS か、機能不足の汎用ツールの組み合わせという二択しかなかった。生徒の進捗把握や離脱防止が手作業になりやすく、運営担当者の時間がオペレーション業務に奪われている。",
   },
   {
+    id: "finedu-digital",
+    industry: "education",
+    title: "金融経済教育デジタルプラットフォーム",
+    subtitle: "インバウンド集客 × リモートセミナー × AI動画生成",
+    url: "https://finedu-digital-platform.vercel.app/",
+    tags: ["インバウンド集客", "リモートセミナー", "AI動画生成", "受講管理"],
+    overview:
+      "全国11拠点・70名体制で金融経済教育を届けてきた事業者のデジタル転換を支えるプラットフォーム。アポ架電・対面訪問中心の人海戦術型から、インバウンド集客・リモートセミナー・動画提供を軸とした効率型モデルへの移行を一本化。AIによるセミナー資料からの動画生成、オンラインアンケート、受講者マイページを統合し、拠点集約後も教育提供範囲を落とさない仕組みを構築する。",
+    challenge:
+      "金融経済教育は「社員が学校・企業に訪問して対面講義する」形式で運営されてきたが、拠点集約と人件費圧縮が中期経営の課題となっている。一方で受講ニーズはむしろ拡大しており、質を落とさずデジタルで対応範囲を広げる仕組みが急務だった。準備〜受講〜アンケートまでオンラインで完結する導線がないと、拠点集約がそのまま提供量の縮小につながってしまう。",
+  },
+  {
     id: "engineer-assessment",
     industry: "hr",
     title: "エンジニア診断",
@@ -201,9 +230,21 @@ const DEMOS = [
     challenge:
       "営業力の弱い中小企業ほど、本来必要なはずの営業顧問や外部営業人材にアクセスできていない。人脈ベースの紹介に偏り、スキルや業界経験でのマッチングが体系化されていないため、出会う前に機会損失が起きている。",
   },
+  {
+    id: "reform-aqua-sales",
+    industry: "lifestyle",
+    title: "リフォーム・浄水器統合アプリ",
+    subtitle: "顧客アプリ × CRM × 電子契約",
+    url: "https://reform-aqua-sales.vercel.app/",
+    tags: ["顧客スマホアプリ", "CRM", "電子契約", "補助金活用"],
+    overview:
+      "リフォーム業・浄水器訪問販売を立ち上げたスタートアップ向けに、顧客向けスマホアプリ・自社顧客管理システム・電子契約を一気通貫で提供する統合プロダクト。会員登録・点検予約・AIチャット相談・カタログ閲覧・決済までをアプリで完結させ、社内側では顧客／商品／工事／営業訪問履歴を一元管理。IT導入補助金・ものづくり補助金の活用を前提に、立ち上げ期からデジタル土台を敷く設計になっている。",
+    challenge:
+      "訪問販売型の中小事業者は、紙の契約書と担当者のスマホに顧客情報が散在し、カートリッジ交換や定期点検のリマインドを逃して継続収益を取りこぼしている。立ち上げ期に人員を増やす前に、補助金を活用してデジタル基盤を先に敷くことが、属人営業に戻らずスケールさせるための勝ち筋となる。",
+  },
 ];
 
-const INDUSTRY_ORDER = ["construction", "nursing", "education", "hr", "sales"];
+const INDUSTRY_ORDER = ["construction", "nursing", "education", "hr", "sales", "lifestyle"];
 
 function GeometricBackground() {
   const mountRef = useRef(null);
