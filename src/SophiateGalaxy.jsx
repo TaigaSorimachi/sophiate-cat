@@ -894,16 +894,21 @@ export default function SophiateGalaxy() {
           <a href="https://sophiate.co.jp/" target="_blank" rel="noopener noreferrer" className="g-link-pill">
             sophiate.co.jp
           </a>
-          <a href="mailto:info@sophiate.co.jp" className="g-link-pill">
-            &#9993; お問い合わせ
-          </a>
           <a
-            href="https://reachup.mf-hd.com/link/tnqjctn5wxr"
+            href="https://sophiate.co.jp/contact/"
             target="_blank"
             rel="noopener noreferrer"
             className="g-link-pill"
           >
-            &#128101; 決済者直アポ
+            &#9993; お問い合わせ
+          </a>
+          <a
+            href="https://estimate.sophiate.co.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="g-link-pill"
+          >
+            &#128176; 自動見積もり
           </a>
         </div>
       </div>

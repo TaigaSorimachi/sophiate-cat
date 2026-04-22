@@ -3,6 +3,8 @@ import * as THREE from "three";
 
 const SERVICE_DOC_URL =
   "https://drive.google.com/file/d/1MBBVGYKNeoR6N62pnY1iZTr1YrrteF9h/view?usp=sharing";
+const CONTACT_URL = "https://sophiate.co.jp/contact/";
+const ESTIMATE_URL = "https://estimate.sophiate.co.jp/";
 
 const INDUSTRIES = {
   construction: {
@@ -1023,7 +1025,18 @@ export default function DemoShowcase() {
               </a>
               <a
                 className="ds-btn-ghost"
-                href="mailto:info@sophiate.co.jp"
+                href={ESTIMATE_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span aria-hidden="true">&#128176;</span>
+                自動見積もり
+              </a>
+              <a
+                className="ds-btn-ghost"
+                href={CONTACT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span aria-hidden="true">&#9993;</span>
                 お問い合わせ
@@ -1157,11 +1170,22 @@ export default function DemoShowcase() {
                   rel="noopener noreferrer"
                 >
                   <span aria-hidden="true">&#128196;</span>
-                  サービス資料を見る
+                  業務改善カタログを見る
                 </a>
                 <a
                   className="ds-btn-ghost"
-                  href="mailto:info@sophiate.co.jp"
+                  href={ESTIMATE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span aria-hidden="true">&#128176;</span>
+                  自動見積もり
+                </a>
+                <a
+                  className="ds-btn-ghost"
+                  href={CONTACT_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <span aria-hidden="true">&#9993;</span>
                   お問い合わせ
