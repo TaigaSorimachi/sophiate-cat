@@ -1019,7 +1019,7 @@ export default function DemoShowcase() {
                 rel="noopener noreferrer"
               >
                 <span aria-hidden="true">&#128196;</span>
-                サービス資料を見る
+                業務改善カタログを見る
               </a>
               <a
                 className="ds-btn-ghost"

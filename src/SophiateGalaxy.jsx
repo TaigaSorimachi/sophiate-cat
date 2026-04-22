@@ -878,6 +878,15 @@ export default function SophiateGalaxy() {
               <span className="g-btn-icon">&#128196;</span>
               サービス資料
             </a>
+            <a
+              href="https://drive.google.com/file/d/1MBBVGYKNeoR6N62pnY1iZTr1YrrteF9h/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="g-btn-ghost"
+            >
+              <span className="g-btn-icon">&#128202;</span>
+              業務改善カタログ
+            </a>
           </div>
         </div>
 
