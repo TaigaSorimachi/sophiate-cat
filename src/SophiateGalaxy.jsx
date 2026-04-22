@@ -14,6 +14,17 @@ export default function SophiateGalaxy() {
   const [phase, setPhase] = useState(0);
 
   useEffect(() => {
+    const prevHtmlOverflow = document.documentElement.style.overflow;
+    const prevBodyOverflow = document.body.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.documentElement.style.overflow = prevHtmlOverflow;
+      document.body.style.overflow = prevBodyOverflow;
+    };
+  }, []);
+
+  useEffect(() => {
     const el = mountRef.current;
     if (!el) return;
 
@@ -837,6 +848,18 @@ export default function SophiateGalaxy() {
           </a>
 
           <div className="g-btn-row">
+            <a
+              href="/demos"
+              onClick={(e) => {
+                e.preventDefault();
+                window.history.pushState({}, "", "/demos");
+                window.dispatchEvent(new PopStateEvent("popstate"));
+              }}
+              className="g-btn-ghost"
+            >
+              <span className="g-btn-icon">&#9728;</span>
+              デモギャラリーを見る
+            </a>
             <a
               href="https://sophiate.co.jp/business-record/"
               target="_blank"
