@@ -591,6 +591,27 @@ export default function DemoShowcase() {
           box-shadow: 0 10px 25px rgba(79,107,245,0.15);
         }
 
+        .ds-notice {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          max-width: 640px;
+          margin: 0 auto 40px;
+          padding: 12px 18px;
+          background: rgba(252,211,77,0.12);
+          border: 1px solid rgba(217,119,6,0.25);
+          border-radius: 14px;
+          font-size: 12.5px;
+          line-height: 1.75;
+          color: #8a5a0b;
+          font-weight: 500;
+        }
+        .ds-notice-icon {
+          flex-shrink: 0;
+          margin-top: 1px;
+          font-size: 14px;
+        }
+
         .ds-industry-bar {
           display: flex;
           gap: 10px;
@@ -1043,6 +1064,13 @@ export default function DemoShowcase() {
               </a>
             </div>
           </section>
+
+          <div className="ds-notice" role="note">
+            <span className="ds-notice-icon" aria-hidden="true">&#9888;</span>
+            <span>
+              掲載中のデモは営業現場での検証目的で構築したプロトタイプです。一部の画面で表示エラーや未実装の機能が含まれる場合があります。あらかじめご了承ください。
+            </span>
+          </div>
 
           <div className="ds-industry-bar">
             <button
